@@ -26,14 +26,6 @@ public class DriverGetServiceBean implements DriverGetService {
         return null;
     }
 
-    public Driver create(Driver driver) {
-        return null;
-    }
-
-    public Driver update(Driver driver) {
-        return null;
-    }
-
     public void delete(String id) {
 
     }

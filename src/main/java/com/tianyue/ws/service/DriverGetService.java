@@ -11,9 +11,5 @@ public interface DriverGetService {
 
     Driver findOne(String id);
 
-    Driver create(Driver driver);
-
-    Driver update(Driver driver);
-
     void delete(String id);
 }
