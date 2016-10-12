@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/APUmaven.iml" filepath="$PROJECT_DIR$/APUmaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APU.iml" filepath="$PROJECT_DIR$/APU.iml" />
     </modules>
   </component>
 </project>

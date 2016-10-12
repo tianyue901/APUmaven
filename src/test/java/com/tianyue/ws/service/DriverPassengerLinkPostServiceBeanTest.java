@@ -4,17 +4,14 @@ import com.tianyue.ws.Application;
 import com.tianyue.ws.model.Driver;
 import com.tianyue.ws.model.DriverPassengerLink;
 import com.tianyue.ws.model.Passenger;
-import com.tianyue.ws.repository.DriverPassengerLinkRepository;
+import com.tianyue.ws.processor.DriverPassengerLinkPostService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.validation.constraints.AssertTrue;
 import java.util.UUID;
 
 /**

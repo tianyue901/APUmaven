@@ -1,4 +1,4 @@
-package com.tianyue.ws.service;
+package com.tianyue.ws.service.passenger;
 
 import com.tianyue.ws.model.Passenger;
 

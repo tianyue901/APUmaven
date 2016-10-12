@@ -1,5 +1,6 @@
-package com.tianyue.ws.service;
+package com.tianyue.ws.service.driver;
 
+import com.tianyue.ws.model.Agent;
 import com.tianyue.ws.model.Driver;
 import com.tianyue.ws.repository.DriverRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
+import java.util.List;
 
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
@@ -22,11 +24,14 @@ public class DriverGetServiceBean implements DriverGetService {
         return drivers;
     }
 
-    public Driver findOne(String id) {
+    @Override
+    public List<Driver> findByAgent(Agent agent) {
         return null;
     }
 
-    public void delete(String id) {
-
+    @Override
+    public Driver findById(String id) {
+        return null;
     }
+
 }

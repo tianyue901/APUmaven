@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="APUmaven" />
+        <module name="APU" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="APUmaven" target="1.8" />
+    <bytecodeTargetLevel>
+      <module name="APU" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

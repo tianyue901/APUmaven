@@ -1,4 +1,4 @@
-package com.tianyue.ws.service;
+package com.tianyue.ws.service.passenger;
 
 import com.tianyue.ws.model.Passenger;
 import com.tianyue.ws.repository.PassengerRepository;
@@ -7,20 +7,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Collection;
-
 /**
  * Created by bwang7 on 10/4/16.
  */
 
 @Service
-@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
-public class PassengerGetServiceBean implements PassengerGetService{
+@Transactional(propagation = Propagation.REQUIRED, readOnly = false)
+public class PassengerPutServiceBean implements PassengerPutService{
     @Autowired
     private PassengerRepository passengerRepository;
 
-    public Collection<Passenger> findAll() {
-        Collection<Passenger> passengers = passengerRepository.findAll();
-        return passengers;
+    public Passenger update(Passenger passenger) {
+        Passenger updatedPassenger = passengerRepository.save(passenger);
+        return updatedPassenger;
     }
 }

@@ -1,7 +1,7 @@
 package com.tianyue.ws.web.api;
 
 import com.tianyue.ws.model.Passenger;
-import com.tianyue.ws.service.PassengerPutService;
+import com.tianyue.ws.service.passenger.PassengerPutService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
