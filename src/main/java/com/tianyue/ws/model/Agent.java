@@ -9,8 +9,8 @@ import javax.persistence.PrimaryKeyJoinColumn;
 @Entity
 @PrimaryKeyJoinColumn(name="people_id")
 public class Agent extends People{
-    String username;
-    String password;
+    private String username;
+    private String password;
 
     public String getUsername() {
         return username;

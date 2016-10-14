@@ -29,11 +29,15 @@ public class PassengerGetServiceBean implements PassengerGetService{
 
     @Override
     public List<Passenger> findPassenger(Agent agent) {
-        return null;
+
+        List<Passenger> passengers = findPassenger(agent);
+        return passengers;
     }
 
     @Override
     public List<Passenger> findPassenger(Agent agent, Driver driver) {
-        return null;
+
+        List<Passenger> passengers = findPassenger(agent, driver);
+        return passengers;
     }
 }

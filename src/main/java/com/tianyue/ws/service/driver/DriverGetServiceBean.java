@@ -26,12 +26,16 @@ public class DriverGetServiceBean implements DriverGetService {
 
     @Override
     public List<Driver> findByAgent(Agent agent) {
-        return null;
+
+        List<Driver> drivers = findByAgent(agent);
+        return drivers;
     }
 
     @Override
     public Driver findById(String id) {
-        return null;
+
+        Driver driver = findById(id);
+        return driver;
     }
 
 }
